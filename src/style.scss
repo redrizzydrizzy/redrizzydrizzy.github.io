@@ -1,0 +1,190 @@
+/* imports */
+
+@import url('https://fonts.googleapis.com/css2?family=Chiron+GoRound+TC:wght@200..900&display=swap');
+
+/* misc */
+/*
+
+
+
+*/
+/* variables */
+
+:root {
+    --title-font: "Chiron GoRound TC";
+    --subtitle-font: "Libre Baskerville";
+    --paragraph-font: "Fredoka";
+    --transition: all 0.75s ease-in-out;
+}
+
+/* HTML native */
+
+html {
+    margin: 0;
+    padding: 0;
+
+    overflow-x: hidden;
+}
+
+#container /* container = body */ {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+    width: 100vw;
+
+    background: #101010;
+
+    transition: var(--transition);
+}
+
+a {
+    all: unset;
+}
+
+header {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    height: 6%;
+    width: 100%;
+
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    transition: var(--transition);
+
+    h1 {
+        font-family: var(--title-font);
+        color: darkgray; 
+    }
+
+    h2 { font-family: var(--title-font); }
+
+    &:hover {
+        height: 7%;
+        border-bottom: 5px solid rgba(255, 255, 255, 0.1);
+
+        h1 { color: white; }
+
+        #header_links_container { 
+            h2 { 
+                cursor: pointer;
+            }
+
+            h2:hover { transform: translateY(-2.5px); }
+
+            h2:first-child { color: lightcoral; }
+            h2:nth-child(2) { color: lightsalmon; }
+            h2:nth-child(3) { color: lemonchiffon; }
+            h2:nth-child(4) { color: lightgreen; }
+            h2:last-child { color: lightblue; }
+        }
+    }
+
+}
+
+h1, h2, p {
+    color: gray;
+    transition: var(--transition);
+    font-family: var(--title-font);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* IDs */
+
+#header_links_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 75%;
+    width: 40%;
+
+    h2 {
+        color: gray;
+    }
+}
+
+/* IDs */
+#page_one {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    background-image: url("/images/seerlunarbg.png");
+    background-position: center;
+    background-size: 125% 125%;
+
+    transition: var(--transition);
+    animation: animateBG 20s ease-in-out infinite;
+
+    #description {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        min-height: 10vh;
+        width: 25vw;
+
+        text-align: justify;
+
+        h1 {
+            color: white;
+            font-size: 2.25rem;
+        }
+
+        p {
+            text-indent: 2rem;
+            color: darkgray;
+        }
+    }
+
+    #image_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        min-height: auto;
+        width: 50vw;
+
+        margin-left: 2vw;
+
+        img {
+            width: 95%;
+            border: solid gray 0.5vh;
+            border-radius: 2vw;
+        }
+    }
+}
+
+/* classes */
+
+.page {
+    width: 100vw;
+    height: 100vh;
+}
+
+/* keyframes */
+
+@keyframes animateBG {
+    0% { background-position: 0% 100%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 100%; }
+}
