@@ -13,7 +13,7 @@ export function App() {
                     <h2>Page 2</h2>
                     <h2>Page 3</h2>
                     <h2>Page 4</h2>
-                    <h2><a href="https://nasahunch.com/projects/sft-2026-27-llaso-project-4-ai-predictive-maintenance-for-lunar-robots-n77o9n3o27fhozkq28jootsy" target="_blank">Our Project</a></h2>
+                    <h2><a href="https://nasahunch.com/projects/sft-2026-27-llaso-project-4-ai-predictive-maintenance-for-lunar-robots-n77o9n3o27fhozkq28jootsy" target="_blank">NASA HUNCH</a></h2>
                 </div>
             </header>
 
@@ -28,7 +28,7 @@ export function App() {
 
                     <div id="image_container">
                         <img src="/images/lunar_rover.webp" /> <br></br>
-                        <p id="caption">caption...</p>
+                        <p id="caption">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate</p>
                     </div>
                 </section>
 
