@@ -4,6 +4,7 @@
 
 /* misc */
 /*
+
 TODO:
 add scroll indicator (https://www.w3schools.com/howto/howto_js_scroll_indicator.asp)
 add scroll things (bottom indication (unknown) and full screen scrolling: https://seeratawan.medium.com/how-to-build-a-full-screen-scrolling-website-12113bb98088)
@@ -136,7 +137,7 @@ main {
     background-size: 125% 125%;
 
     transition: var(--transition);
-    animation: animateBG 20s ease-in-out infinite;
+    animation: animateBG 40s ease-in-out infinite;
 
     #description {
         display: flex;
