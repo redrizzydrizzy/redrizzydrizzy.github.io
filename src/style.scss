@@ -6,7 +6,6 @@
 /*
 
 TODO:
-add scroll indicator (https://www.w3schools.com/howto/howto_js_scroll_indicator.asp)
 add scroll things (bottom indication (unknown) and full screen scrolling: https://seeratawan.medium.com/how-to-build-a-full-screen-scrolling-website-12113bb98088)
 
 */
@@ -43,14 +42,20 @@ html {
     min-height: 100vh;
     width: 100vw;
 
-    background: #101010;
-
     transition: var(--transition);
 }
 
-a {
-    all: unset;
+#background {
+    position: fixed;
+    background-color: black;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
 }
+
+a, button { all: unset; cursor: pointer; }
 
 header {
     position: fixed;
@@ -65,8 +70,7 @@ header {
     height: 6%;
     width: 100%;
 
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(40px);
     transition: var(--transition);
 
     h1 {
@@ -74,26 +78,59 @@ header {
         color: darkgray; 
     }
 
-    h2 { font-family: var(--title-font); }
+    #scroll_bar {
+        position: absolute;
+        bottom: 0;
+
+        height: 5px;
+        width: 100%;
+
+        background: rgba(255, 255, 255, 0.1);
+
+        transition: var(--transition);
+
+        #scroll_progress {
+            height: 5px;
+            width: 0;
+
+            background: rgba(255, 255, 255, 0.5);
+
+            transition: var(--transition);
+        }
+    }
+
+    #header_links_container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        height: 75%;
+        width: 40%;
+
+        h2 {
+            color: gray;
+            font-family: var(--title-font);
+        }
+    }
 
     &:hover {
         height: 7%;
-        border-bottom: 5px solid rgba(255, 255, 255, 0.1);
 
         h1 { color: white; }
 
+        #scroll_bar {
+            height: 7px;
+            #scroll_progress { height: 7px; }
+        }
+
         #header_links_container { 
-            h2 { 
-                cursor: pointer;
-            }
-
+            h2 { cursor: pointer; }
             h2:hover { transform: translateY(-2.5px); }
-
-            h2:first-child { color: lightcoral; }
-            h2:nth-child(2) { color: lightsalmon; }
-            h2:nth-child(3) { color: lemonchiffon; }
-            h2:nth-child(4) { color: lightgreen; }
-            h2:last-child { color: lightblue; }
+            h2:first-child { color: lightcoral; &:hover { color: indianred; } }
+            h2:nth-child(2) { color: lightsalmon; &:hover { color: salmon; } }
+            h2:nth-child(3) { color: lemonchiffon; &:hover { color: gold; } }
+            h2:nth-child(4) { color: lightgreen; &:hover { color: springgreen; } }
+            h2:last-child { color: lightblue; &:hover { color: cornflowerblue; } }
         }
     }
 
@@ -113,31 +150,12 @@ main {
 
 /* IDs */
 
-#header_links_container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    height: 75%;
-    width: 40%;
-
-    h2 {
-        color: gray;
-    }
-}
-
-/* IDs */
 #page_one {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 
-    background-image: url("/images/seerlunarbg.png");
-    background-position: center;
-    background-size: 125% 125%;
-
-    transition: var(--transition);
-    animation: animateBG 40s ease-in-out infinite;
+    padding-top: 2.1vh;
 
     #description {
         display: flex;
@@ -148,16 +166,6 @@ main {
         width: 25vw;
 
         text-align: justify;
-
-        h1 {
-            color: white;
-            font-size: 2.25rem;
-        }
-
-        p {
-            text-indent: 2rem;
-            color: darkgray;
-        }
     }
 
     #image_container {
@@ -182,6 +190,14 @@ main {
     }
 }
 
+#section_one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #101010;
+}
+
 /* classes */
 
 .page {
@@ -189,10 +205,18 @@ main {
     height: 100vh;
 }
 
-/* keyframes */
+.section {
+    width: 100vw;
+    height: 50vh;
+}
 
-@keyframes animateBG {
-    0% { background-position: 0% 100%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 100%; }
+.subtitle {
+    color: white;
+    font-size: 2.25rem;
+}
+
+.paragraph {
+    color: darkgray;
+    text-indent: 2rem;
+    text-align: justify;
 }
