@@ -4,17 +4,14 @@
 
 /* misc */
 /*
-
 TODO:
 add scroll things (bottom indication (unknown) and full screen scrolling: https://seeratawan.medium.com/how-to-build-a-full-screen-scrolling-website-12113bb98088)
-
+DO NOT ADD SCROLL THINGS IT'S A TRAP NO AMENITIES UNTIL IT'S ALL DONE
 */
 /* variables */
 
 :root {
-    --title-font: "Chiron GoRound TC";
-    --subtitle-font: "Libre Baskerville";
-    --paragraph-font: "Fredoka";
+    --default-font: "Chiron GoRound TC";
     --transition: all 0.5s ease-in-out;
 }
 
@@ -45,17 +42,21 @@ html {
     transition: var(--transition);
 }
 
+/*
 #background {
     position: fixed;
-    background-color: black;
+    z-index: -1;
     top: 0;
     left: 0;
+
     width: 100vw;
     height: 100vh;
-    z-index: -1;
+    
+    background-color: black;
 }
+*/
 
-a, button { all: unset; cursor: pointer; }
+a, button, ol, ul { all: unset; cursor: pointer; }
 
 header {
     position: fixed;
@@ -70,17 +71,20 @@ header {
     height: 6%;
     width: 100%;
 
+    background: rgba(0, 0, 0, 0.75);
+
     backdrop-filter: blur(40px);
     transition: var(--transition);
 
     h1 {
-        font-family: var(--title-font);
+        margin-left: 1.5vw;
+        font-family: var(--default-font);
         color: darkgray; 
     }
 
     #scroll_bar {
         position: absolute;
-        bottom: 0;
+        bottom: -5px;
 
         height: 5px;
         width: 100%;
@@ -109,12 +113,14 @@ header {
 
         h2 {
             color: gray;
-            font-family: var(--title-font);
+            font-family: var(--default-font);
         }
     }
 
     &:hover {
         height: 7%;
+
+        background: rgba(0, 0, 0, 0.5);
 
         h1 { color: white; }
 
@@ -124,7 +130,7 @@ header {
         }
 
         #header_links_container { 
-            h2 { cursor: pointer; }
+            h2 { cursor: pointer; transition: var(--transition); }
             h2:hover { transform: translateY(-2.5px); }
             h2:first-child { color: lightcoral; &:hover { color: indianred; } }
             h2:nth-child(2) { color: lightsalmon; &:hover { color: salmon; } }
@@ -139,7 +145,7 @@ header {
 h1, h2, p {
     color: gray;
     transition: var(--transition);
-    font-family: var(--title-font);
+    font-family: var(--default-font);
 }
 
 main {
@@ -157,15 +163,19 @@ main {
 
     padding-top: 2.1vh;
 
+    background-image: url("/images/seerlunarbg.png");
+    background-size: 125% 125%;
+
+    animation: animateBG 40s ease-in-out infinite;
+
     #description {
         display: flex;
-        align-items: center;
         flex-direction: column;
 
-        min-height: 10vh;
-        width: 25vw;
+        min-height: 70vh;
+        width: 27.5vw;
 
-        text-align: justify;
+        text-align: center;
     }
 
     #image_container {
@@ -174,27 +184,128 @@ main {
         align-items: center;
         flex-direction: column;
 
-        min-height: auto;
-        width: 50vw;
+        min-height: 70vh;
+        width: 40vw;
 
         margin-left: 2vw;
         margin-top: 1vh;
 
         img {
-            width: 95%;
+            width: 100%;
+
             border: solid gray 0.5vh;
-            border-radius: 2vw;
+            border-radius: 2vw;    
+
+            object-fit: cover;
+            object-position: center;
         }
 
-        #caption { text-align: center; }
+        #caption {
+            margin-top: 0vh;
+
+            text-align: center;
+            font-size: 0.75rem;
+        }
     }
 }
 
 #section_one {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    justify-content: space-evenly;
 
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-image: linear-gradient(to right, white, black) 1 0;
+
+    background: black;
+
+    > h1 {
+        color: white;
+        margin-bottom: -4.75vh;
+
+        span { color: gray; }
+    }
+
+    #cards_container {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        height: 100%;
+        width: 100%;
+        
+        margin-left: 2.5vw;
+        margin-right: 2.5vw;
+        margin-bottom: -2.5vh;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+
+        height: 75%;
+        width: 18vw;
+
+        border: gray 2px solid;
+        border-radius: 1vw;
+
+        overflow: hidden;
+
+        img {
+            position: relative;
+            top: 0;
+
+            height: 50%;
+            width: 100%;
+
+            border-bottom: black 1px solid;
+
+            object-position: center;
+            object-fit: cover;
+        }
+        
+        #description {
+            margin-left: 1vw;
+            margin-right: 1vw;
+
+            text-align: justify;
+
+            h1 {
+                color: palevioletred;
+
+                margin-top: 1vh;
+                margin-bottom: 0vh;
+
+                font-size: 1.75rem;
+            }
+
+            h2 {
+                color: lavenderblush;
+                margin-top: 0vh;
+                margin-bottom: 0vh;
+                font-size: 1.25rem;
+            }
+
+            p {
+                margin-top: 0vw;
+
+                font-size: 0.9em;
+                text-align: left;
+
+                color: darkgray;
+
+                span {
+                    color: lightgray;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+#page_two {
     background: #101010;
 }
 
@@ -207,7 +318,7 @@ main {
 
 .section {
     width: 100vw;
-    height: 50vh;
+    height: 57.5vh;
 }
 
 .subtitle {
@@ -219,4 +330,12 @@ main {
     color: darkgray;
     text-indent: 2rem;
     text-align: justify;
+}
+
+/* keyframes */
+
+@keyframes animateBG {
+    0% { background-position: 0% 50% }
+    50% { background-position: 100% 50% }
+    100% { background-position: 0% 50% }
 }
