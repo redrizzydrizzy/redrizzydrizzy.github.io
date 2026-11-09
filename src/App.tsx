@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Shader, FlowingGradient } from "shaders/react";
+// import { Shader, FlowingGradient } from "shaders/react";
 
 import "./style.scss";
 
@@ -35,14 +35,14 @@ export function App() {
             </Shader>
             */}
             <header>
-                <h1>StemaSeer</h1>
+                <h1>PirateToken</h1>
 
                 <nav id="header_links_container">
-                    <h2>Page 1</h2>
-                    <h2>Page 2</h2>
+                    <h2>Overview</h2>
+                    <h2>Timeline</h2>
                     <h2>Page 3</h2>
                     <h2>Page 4</h2>
-                    <h2><a href="https://nasahunch.com/projects/sft-2026-27-llaso-project-4-ai-predictive-maintenance-for-lunar-robots-n77o9n3o27fhozkq28jootsy" target="_blank">About HUNCH</a></h2>
+                    <h2><a href="https://nasahunch.com/projects/sft-2026-27-llaso-project-4-ai-predictive-maintenance-for-lunar-robots-n77o9n3o27fhozkq28jootsy" target="_blank">NASA HUNCH</a></h2>
                 </nav>
 
                 <div id="scroll_bar">
@@ -72,7 +72,7 @@ export function App() {
                 </section>
 
                 <section id="section_one" className="section"> {/* meet the team section */}
-                    <h1>StemaSeer Staff <span>· Tri-County RVTHS, Franklin, Massachusetts</span></h1>
+                    <h1>PirateToken Staff <span>· Tri-County RVTHS, Franklin, Massachusetts</span></h1>
 
                     <div id="cards_container">
                         <div className="card">
@@ -149,11 +149,71 @@ export function App() {
                 </section>
 
                 <section id="page_two" className="page">
-                    <aside id="sidebar"></aside>
-
                     <div id="content">
+                        <h1>PROJECT SIGNIFICANCE</h1>
 
+                        <p>Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec</p>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,</p>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer</p>
+                    
+                        <hr></hr>
+                    
+                        <div><img src="/images/rover_placeholder.webp"/></div>
+                        <div><img src="/images/lunar_rover.webp"/></div>
+                        <div><img src="images/moon.webp"/></div>
                     </div>
+                    
+                    <aside id="sidebar">
+                        <h1>OBJECTIVE</h1>
+
+                        <p>Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular.</p>
+                        <p>Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in</p>
+                        <p>Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular. Li lingues differes</p>
+                        <p>Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular.</p>
+                        <p>Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular.</p>
+                    </aside>
+                </section>
+
+                <section id="footer">
+                    <div id="description">
+                        <h2>PirateToken</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer</p>
+                    </div>
+
+                    <nav>
+                        <div>
+                            <h2>Category</h2>
+                            <p>Link</p>
+                            <p>Link</p>
+                            <p>Link</p>
+                            <p>Link</p>
+                        </div>
+
+                        <div>
+                            <h2>Category</h2>
+                            <p>Link</p>
+                            <p>Link</p>
+                            <p>Link</p>
+                            <p>Link</p>
+                        </div>
+
+                        <div>
+                            <h2>Category</h2>
+                            <p>Link</p>
+                            <p>Link</p>
+                            <p>Link</p>
+                            <p>Link</p>
+                        </div>
+                        
+                        <div>
+                            <h2>Category</h2>
+                            <p>Link</p>
+                            <p>Link</p>
+                            <p>Link</p>
+                            <p>Link</p>
+                        </div>
+                    </nav>
+                    <div id="footnote"><h2>© 2026 PirateToken — CIS students of Tri-County RVTHS</h2></div>
                 </section>
             </main>
         </div>

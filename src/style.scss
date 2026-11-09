@@ -7,6 +7,7 @@
 TODO:
 add scroll things (bottom indication (unknown) and full screen scrolling: https://seeratawan.medium.com/how-to-build-a-full-screen-scrolling-website-12113bb98088)
 DO NOT ADD SCROLL THINGS IT'S A TRAP NO AMENITIES UNTIL IT'S ALL DONE
+:checkmark:
 */
 /* variables */
 
@@ -130,13 +131,15 @@ header {
         }
 
         #header_links_container { 
-            h2 { cursor: pointer; transition: var(--transition); }
-            h2:hover { transform: translateY(-2.5px); }
-            h2:first-child { color: lightcoral; &:hover { color: indianred; } }
-            h2:nth-child(2) { color: lightsalmon; &:hover { color: salmon; } }
-            h2:nth-child(3) { color: lemonchiffon; &:hover { color: gold; } }
-            h2:nth-child(4) { color: lightgreen; &:hover { color: springgreen; } }
-            h2:last-child { color: lightblue; &:hover { color: cornflowerblue; } }
+            h2 {
+                cursor: pointer;
+                transition: var(--transition); 
+
+                &.active { color: white; }
+            }
+
+            h2:hover { transform: translateY(-2.5px); color: white; }
+            h2:last-child { color: lightblue; &:hover { color: lightskyblue; } }
         }
     }
 
@@ -167,6 +170,8 @@ main {
     background-size: 125% 125%;
 
     animation: animateBG 40s ease-in-out infinite;
+
+    p { font-size: 1.1rem; }
 
     #description {
         display: flex;
@@ -215,13 +220,12 @@ main {
     align-items: center;
     justify-content: space-evenly;
 
-    border-top: 1px solid;
-    border-bottom: 1px solid;
-    border-image: linear-gradient(to right, white, black) 1 0;
+    border: 5px solid #0000;
+    background: linear-gradient(black, black) padding-box, linear-gradient( var(--angle), #121212, #212121, gray, lightgray) border-box;
+    
+    animation: 5s rotate linear infinite;
 
-    background: black;
-
-    > h1 {
+    h1 {
         color: white;
         margin-bottom: -4.75vh;
 
@@ -267,9 +271,9 @@ main {
         }
         
         #description {
-            margin-left: 1vw;
-            margin-right: 1vw;
-
+            padding-left: 1vw;
+            padding-right: 1vw;
+            
             text-align: justify;
 
             h1 {
@@ -283,8 +287,10 @@ main {
 
             h2 {
                 color: lavenderblush;
+
                 margin-top: 0vh;
                 margin-bottom: 0vh;
+
                 font-size: 1.25rem;
             }
 
@@ -298,7 +304,7 @@ main {
 
                 span {
                     color: lightgray;
-                    font-weight: bold;
+                    font-weight: bolder;
                 }
             }
         }
@@ -306,7 +312,168 @@ main {
 }
 
 #page_two {
-    background: #101010;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    background: #040404;
+    
+    #content {
+        position: relative;
+
+        height: 70%;
+        width: 60%;
+
+        padding: 0 1.25%;
+        border-left: 4px solid gray;
+        
+        h1 {
+            color: white;
+            margin-bottom: 0.75em;
+            font-size: 2.25rem;
+        }
+
+        p {
+            text-indent: 2rem;
+            font-size: 1.25rem;
+        }
+
+        hr {
+            margin: 1.75rem 0;
+
+            border: none;
+            border-top: 4px solid gray;
+        }
+
+        div {
+            display: inline-block;
+
+            width: 30%;
+            height: 30%;
+
+            margin-top: 1rem;
+            margin-right: 2.81%;
+
+            border: 3px solid gray;
+            border-radius: 2rem;
+
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                height: 100%;
+
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+    }
+
+    aside {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+
+        width: 20%;
+        height: 70%;
+
+        padding: 0 1%;
+        margin-left: -2.5vw;
+
+        border: 2px solid gray;
+        border-radius: 1rem;
+
+        h1 {
+            color: white;
+            font-size: 2.25rem;
+        }
+
+        p {
+            margin-top: 0.25rem;
+            font-size: 1.05rem;
+            text-indent: 2rem;
+        }
+    }
+}
+
+#footer {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100vw;
+    height: 40vh;
+
+    border-top: 5px solid gray;
+
+    background: black;
+
+    #description {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        height: 90%;
+        width: 25%;
+
+        h2 { color: white; }
+        
+        p {
+            margin-top: 0;
+            text-indent: 2rem;
+        }
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        height: 90%;
+        width: 50%;
+
+        margin-left: 2.5vw;
+
+        div {
+            height: 60%;
+
+            padding-left: 1.75em;
+            border-left: 4px solid gray;
+
+            h2 { color: lightgray; }
+
+            p {
+                color: darkgray;
+                cursor: pointer;
+
+                &:hover {
+                    transform: translateX(5px);
+                    transition: var(--transition);
+                }
+            }
+        }
+    }
+
+    #footnote {
+        position: absolute;
+        bottom: -5vh;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 100%;
+        height: 5vh;
+
+        border-top: 2px solid #101010;
+        background: black;
+
+        h2 { font-size: 1.25rem; }
+    }
 }
 
 /* classes */
@@ -332,10 +499,22 @@ main {
     text-align: justify;
 }
 
+/* properties */
+
+@property --angle {
+    syntax: '<angle>';
+    inherits: false;
+    initial-value: 0deg;
+}
+
 /* keyframes */
 
 @keyframes animateBG {
-    0% { background-position: 0% 50% }
-    50% { background-position: 100% 50% }
-    100% { background-position: 0% 50% }
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@keyframes rotate {
+    to { --angle: 360deg; }
 }
