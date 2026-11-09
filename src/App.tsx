@@ -182,35 +182,34 @@ export function App() {
 
                     <nav>
                         <div>
-                            <h2>Category</h2>
-                            <p>Link</p>
-                            <p>Link</p>
-                            <p>Link</p>
-                            <p>Link</p>
+                            <h2>Introduction</h2>
+                            <p>✦ Overview</p>
+                            <p>✦ Meet The Team</p>
+                            <p>✦ Significance</p>
                         </div>
 
                         <div>
                             <h2>Category</h2>
-                            <p>Link</p>
-                            <p>Link</p>
-                            <p>Link</p>
-                            <p>Link</p>
+                            <p>✦ Link</p>
+                            <p>✦ Link</p>
+                            <p>✦ Link</p>
+                            <p>✦ Link</p>
                         </div>
 
                         <div>
                             <h2>Category</h2>
-                            <p>Link</p>
-                            <p>Link</p>
-                            <p>Link</p>
-                            <p>Link</p>
+                            <p>✦ Link</p>
+                            <p>✦ Link</p>
+                            <p>✦ Link</p>
+                            <p>✦ Link</p>
                         </div>
                         
                         <div>
                             <h2>Category</h2>
-                            <p>Link</p>
-                            <p>Link</p>
-                            <p>Link</p>
-                            <p>Link</p>
+                            <p>✦ Link</p>
+                            <p>✦ Link</p>
+                            <p>✦ Link</p>
+                            <p>✦ Link</p>
                         </div>
                     </nav>
                     <div id="footnote"><h2>© 2026 PirateToken — CIS students of Tri-County RVTHS</h2></div>

@@ -421,7 +421,7 @@ main {
         width: 25%;
 
         h2 { color: white; }
-        
+
         p {
             margin-top: 0;
             text-indent: 2rem;
@@ -444,7 +444,10 @@ main {
             padding-left: 1.75em;
             border-left: 4px solid gray;
 
-            h2 { color: lightgray; }
+            h2 {
+                color: lightgray;
+                cursor: pointer;
+            }
 
             p {
                 color: darkgray;
