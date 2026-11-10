@@ -35,10 +35,10 @@ export function App() {
             </Shader>
             */}
             <header>
-                <h1>PirateToken</h1>
+                <h1>StemaSeer</h1>
 
                 <nav id="header_links_container">
-                    <h2>Overview</h2>
+                    <h2><a href="#page_one">Introduction</a></h2>
                     <h2>Timeline</h2>
                     <h2>Page 3</h2>
                     <h2>Page 4</h2>
@@ -48,9 +48,7 @@ export function App() {
                 <div id="scroll_bar">
                     <div
                         id="scroll_progress"
-                        style={{
-                            width: `${scrollProgress}%`
-                        }}
+                        style={{ width: `${scrollProgress}%` }}
                     ></div>
                 </div>
             </header>
@@ -72,7 +70,7 @@ export function App() {
                 </section>
 
                 <section id="section_one" className="section"> {/* meet the team section */}
-                    <h1>PirateToken Staff <span>· Tri-County RVTHS, Franklin, Massachusetts</span></h1>
+                    <h1>Our Team <span>| Tri-County RVTHS · CIS</span></h1>
 
                     <div id="cards_container">
                         <div className="card">
@@ -122,12 +120,12 @@ export function App() {
                             <img src="/images/meet_the_members_placeholder.webp"/>
 
                             <div id="description">
-                                <h1>Jonathan Gagne</h1>
-                                <h2>Dashboard Developer</h2> <br></br>
+                                <h1>Matthew Desrosiers</h1>
+                                <h2>Web Designer / Developer</h2> <br></br>
 
                                 <p>
                                     <span>Contributions:</span> <br></br>
-                                    ✦ Contribution one
+                                    ✦ Built, designed and developed the <em>beautiful</em> website you see now.
                                 </p>
                             </div>
                         </div>
@@ -136,12 +134,12 @@ export function App() {
                             <img src="/images/meet_the_members_placeholder.webp"/>
 
                             <div id="description">
-                                <h1>Matthew Desrosiers</h1>
-                                <h2>Lead UI Engineer</h2> <br></br>
+                                <h1>Jonathan Gagne</h1>
+                                <h2>Dashboard Designer / Developer</h2> <br></br>
 
                                 <p>
                                     <span>Contributions:</span> <br></br>
-                                    ✦ Built the <em>beautiful</em> website you see now.
+                                    ✦ Contribution one
                                 </p>
                             </div>
                         </div>
@@ -176,43 +174,43 @@ export function App() {
 
                 <section id="footer">
                     <div id="description">
-                        <h2>PirateToken</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer</p>
+                        <h2>StemaSeer</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
                     </div>
 
                     <nav>
                         <div>
                             <h2>Introduction</h2>
-                            <p>✦ Overview</p>
-                            <p>✦ Meet The Team</p>
-                            <p>✦ Significance</p>
+                            <p><a href="#page_one">✦ Overview</a></p>
+                            <p><a href="#caption">✦ Meet The Team</a></p>
+                            <p><a href="#page_two">✦ Significance</a></p>
+                        </div>
+
+                        <div>
+                            <h2>Timeline</h2>
+                            <p><a>✦ Link</a></p>
+                            <p><a>✦ Link</a></p>
+                            <p><a>✦ Link</a></p>
+                            <p><a>✦ Link</a></p>
                         </div>
 
                         <div>
                             <h2>Category</h2>
-                            <p>✦ Link</p>
-                            <p>✦ Link</p>
-                            <p>✦ Link</p>
-                            <p>✦ Link</p>
-                        </div>
-
-                        <div>
-                            <h2>Category</h2>
-                            <p>✦ Link</p>
-                            <p>✦ Link</p>
-                            <p>✦ Link</p>
-                            <p>✦ Link</p>
+                            <p><a>✦ Link</a></p>
+                            <p><a>✦ Link</a></p>
+                            <p><a>✦ Link</a></p>
+                            <p><a>✦ Link</a></p>
                         </div>
                         
                         <div>
                             <h2>Category</h2>
-                            <p>✦ Link</p>
-                            <p>✦ Link</p>
-                            <p>✦ Link</p>
-                            <p>✦ Link</p>
+                            <p><a>✦ Link</a></p>
+                            <p><a>✦ Link</a></p>
+                            <p><a>✦ Link</a></p>
+                            <p><a>✦ Link</a></p>
                         </div>
                     </nav>
-                    <div id="footnote"><h2>© 2026 PirateToken — CIS students of Tri-County RVTHS</h2></div>
+                    <div id="footnote"><h2>© 2026 StemaSeer — CIS students of Tri-County RVTHS</h2></div>
                 </section>
             </main>
         </div>

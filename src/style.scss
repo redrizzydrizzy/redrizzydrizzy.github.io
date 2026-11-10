@@ -24,6 +24,8 @@ html {
 
     overflow-x: hidden;
 
+    scroll-behavior: smooth;
+
     scrollbar-width: none;
     &::-webkit-scrollbar { display: none; }
 }
@@ -277,34 +279,35 @@ main {
             text-align: justify;
 
             h1 {
-                color: palevioletred;
+                color: white;
 
                 margin-top: 1vh;
                 margin-bottom: 0vh;
 
-                font-size: 1.75rem;
+                font-size: 1.5rem;
             }
 
             h2 {
-                color: lavenderblush;
+                color: darkgray;
 
                 margin-top: 0vh;
                 margin-bottom: 0vh;
 
-                font-size: 1.25rem;
+                font-size: 1.24rem;
             }
 
             p {
                 margin-top: 0vw;
 
                 font-size: 0.9em;
+                font-weight: bold;
                 text-align: left;
 
-                color: darkgray;
+                color: gray;
 
                 span {
                     color: lightgray;
-                    font-weight: bolder;
+                    font-weight: bold;
                 }
             }
         }
@@ -425,6 +428,7 @@ main {
         p {
             margin-top: 0;
             text-indent: 2rem;
+            font-size: 0.95em;
         }
     }
 
@@ -447,6 +451,9 @@ main {
             h2 {
                 color: lightgray;
                 cursor: pointer;
+                transition: var(--transition);
+
+                &:hover { color: white; }
             }
 
             p {
@@ -518,6 +525,4 @@ main {
     100% { background-position: 0% 50%; }
 }
 
-@keyframes rotate {
-    to { --angle: 360deg; }
-}
+@keyframes rotate { to { --angle: 360deg; } }
