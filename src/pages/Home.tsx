@@ -22,7 +22,7 @@ export function Home() {
             </section>
 
             <section id="section_one" className="section"> {/* meet the team section */}
-                <h1>Our Team <span>| Tri-County RVTHS · CIS</span></h1>
+                <h1>StemaSeer Staff <span>| Tri-County RVTHS · CIS</span></h1>
 
                 <div id="cards_container">
                     <div className="card">
