@@ -19,6 +19,9 @@ DO NOT ADD SCROLL THINGS IT'S A TRAP NO AMENITIES UNTIL IT'S ALL DONE
 /* HTML native */
 
 html {
+    min-height: 100vh;
+    width: 100vw;
+
     margin: 0;
     padding: 0;
 
@@ -30,7 +33,7 @@ html {
     &::-webkit-scrollbar { display: none; }
 }
 
-#container /* container = body */ {
+#container /* = body */ {
     position: absolute;
     top: 0;
     left: 0;
@@ -44,20 +47,6 @@ html {
 
     transition: var(--transition);
 }
-
-/*
-#background {
-    position: fixed;
-    z-index: -1;
-    top: 0;
-    left: 0;
-
-    width: 100vw;
-    height: 100vh;
-    
-    background-color: black;
-}
-*/
 
 a, button { all: unset; cursor: pointer; }
 
@@ -76,7 +65,7 @@ header {
 
     background: rgba(0, 0, 0, 0.75);
 
-    backdrop-filter: blur(40px);
+    backdrop-filter: blur(10px);
     transition: var(--transition);
 
     h1 {
@@ -122,14 +111,13 @@ header {
 
     &:hover {
         height: 7%;
-
         background: rgba(0, 0, 0, 0.5);
 
         h1 { color: white; }
 
         #scroll_bar {
             height: 7px;
-            #scroll_progress { height: 7px; }
+            #scroll_progress { height: 100%; }
         }
 
         #header_links_container { 
@@ -144,13 +132,17 @@ header {
             h2:last-child { color: lightblue; &:hover { color: lightskyblue; } }
         }
     }
+}
 
+#home, #timeline {
+    min-height: 100vh;
+    width: 100vw;
 }
 
 h1, h2, p {
     color: gray;
-    transition: var(--transition);
     font-family: var(--default-font);
+    transition: var(--transition);
 }
 
 main {
@@ -160,8 +152,9 @@ main {
 }
 
 /* IDs */
+/* Home */
 
-#page_one {
+#home #page_one {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -216,13 +209,14 @@ main {
     }
 }
 
-#section_one {
+#home #section_one {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
 
     border: 5px solid #0000;
+    border-left: none; border-right: none;
     background: linear-gradient(black, black) padding-box, linear-gradient( var(--angle), #121212, #212121, gray, lightgray) border-box;
     
     animation: 5s rotate linear infinite;
@@ -314,7 +308,7 @@ main {
     }
 }
 
-#page_two {
+#home #page_two {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -398,6 +392,24 @@ main {
             text-indent: 2rem;
         }
     }
+}
+
+/* Timeline */
+
+#timeline #page_one {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    background: black;
+}
+
+#timeline #page_two {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    background: black;
 }
 
 #footer {
@@ -489,12 +501,12 @@ main {
 /* classes */
 
 .page {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
 }
 
 .section {
-    width: 100vw;
+    width: 100%;
     height: 57.5vh;
 }
 
