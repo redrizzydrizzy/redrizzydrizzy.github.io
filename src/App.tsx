@@ -35,7 +35,7 @@ export function App() {
             </Shader>
             */}
             <header>
-                <h1>StemaSeer</h1>
+                <h1><a href="#page_one">StemaSeer</a></h1>
 
                 <nav id="header_links_container">
                     <h2><a href="#page_one">Introduction</a></h2>
@@ -150,9 +150,9 @@ export function App() {
                     <div id="content">
                         <h1>PROJECT SIGNIFICANCE</h1>
 
-                        <p>Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec</p>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,</p>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer</p>
+                        <p>Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.</p>
                     
                         <hr></hr>
                     
@@ -168,7 +168,7 @@ export function App() {
                         <p>Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in</p>
                         <p>Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular. Li lingues differes</p>
                         <p>Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular.</p>
-                        <p>Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular.</p>
+                        <p>Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular. Li lingues differes</p>
                     </aside>
                 </section>
 
@@ -180,7 +180,7 @@ export function App() {
 
                     <nav>
                         <div>
-                            <h2>Introduction</h2>
+                            <h2><a href="#page_one">Introduction</a></h2>
                             <p><a href="#page_one">✦ Overview</a></p>
                             <p><a href="#caption">✦ Meet The Team</a></p>
                             <p><a href="#page_two">✦ Significance</a></p>
@@ -188,10 +188,10 @@ export function App() {
 
                         <div>
                             <h2>Timeline</h2>
-                            <p><a>✦ Link</a></p>
-                            <p><a>✦ Link</a></p>
-                            <p><a>✦ Link</a></p>
-                            <p><a>✦ Link</a></p>
+                            <p><a>✦ Initialization</a></p> {/* pre-PDR */}
+                            <p><a>✦ PDR Period</a></p> {/* PDR - CDR */}
+                            <p><a>✦ CDR Period</a></p> {/* CDR - presentation */}
+                            <p><a>✦ Presentation</a></p> {/* competition & post-presentation(?) */}
                         </div>
 
                         <div>
