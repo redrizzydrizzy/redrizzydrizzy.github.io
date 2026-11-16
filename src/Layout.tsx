@@ -1,4 +1,4 @@
-import { Outlet } from "react-router-dom"
+import { Outlet, Link } from "react-router-dom"
 import { useState, useEffect } from "react";
 
 export function Layout() {
@@ -14,37 +14,32 @@ export function Layout() {
         }
 
         window.addEventListener("scroll", onScroll);
-        
-        return () => {
-            window.removeEventListener("scroll", onScroll);
-        }
+        return () => { window.removeEventListener("scroll", onScroll); }
     }, []);
 
     return (
         <div>
             <header>
-                <h1><a href="#page_one">StemaSeer</a></h1>
+                <h1><Link to="/" state={{ scrollTo: "page_one" }}>StemaSeer</Link></h1>
 
                 <nav id="header_links_container">
-                    <h2><a href="#page_one">Introduction</a></h2>
-                    <h2>Timeline</h2>
+                    <h2><Link to="/" state={{ scrollTo: "page_one" }}>Introduction</Link></h2>
+                    <h2><Link to="/timeline" state={{ scrollTo: "page_one" }}>Timeline</Link></h2>
+                    {/* pages will be added / filled out as needed */}
                     <h2>Page 3</h2>
                     <h2>Page 4</h2>
                     <h2><a href="https://nasahunch.com/projects/sft-2026-27-llaso-project-4-ai-predictive-maintenance-for-lunar-robots-n77o9n3o27fhozkq28jootsy" target="_blank">NASA HUNCH</a></h2>
                 </nav>
 
                 <div id="scroll_bar">
-                    <div
-                        id="scroll_progress"
-                        style={{ width: `${scrollProgress}%` }}
-                    ></div>
+                    <div id="scroll_progress" style={{ width: `${scrollProgress}%` }}></div>
                 </div>
             </header>
 
             <div id="container">
                 <main>
                     <Outlet />
-            
+
                     <section id="footer">
                         <div id="description">
                             <h2>StemaSeer</h2>
@@ -53,18 +48,18 @@ export function Layout() {
 
                         <nav>
                             <div>
-                                <h2><a href="#page_one">Introduction</a></h2>
-                                <p><a href="#page_one">✦ Overview</a></p>
-                                <p><a href="#caption">✦ Meet The Team</a></p>
-                                <p><a href="#page_two">✦ Significance</a></p>
+                                <h2><Link to="/" state={{ scrollTo: "page_one" }}>Introduction</Link></h2>
+                                <p><Link to="/" state={{ scrollTo: "page_one" }}>✦ Overview</Link></p>
+                                <p><Link to="/" state={{ scrollTo: "caption" }}>✦ Meet The Team</Link></p>
+                                <p><Link to="/" state={{ scrollTo: "page_two" }}>✦ Significance</Link></p>
                             </div>
 
                             <div>
-                                <h2>Timeline</h2>
-                                <p><a>✦ Initialization</a></p> {/* pre-PDR */}
-                                <p><a>✦ PDR Period</a></p> {/* PDR - CDR */}
-                                <p><a>✦ CDR Period</a></p> {/* CDR - presentation */}
-                                <p><a>✦ Presentation</a></p> {/* competition & post-presentation(?) */}
+                                <h2><Link to="/timeline" state={{ scrollTo: "page_one" }}>Timeline</Link></h2>
+                                <p><Link to="/timeline" state={{ scrollTo: "page_one" }}>✦ Initialization</Link></p> {/* pre-PDR */}
+                                <p><Link to="/timeline" state={{ scrollTo: "page_two" }}>✦ PDR Period</Link></p> {/* PDR - CDR */}
+                                <p><Link to="/timeline" state={{ scrollTo: "page_three" }}>✦ CDR Period</Link></p> {/* CDR - presentation */}
+                                <p><Link to="/timeline" state={{ scrollTo: "page_four" }}>✦ Presentation</Link></p> {/* competition & post-presentation (?) */}
                             </div>
 
                             <div>

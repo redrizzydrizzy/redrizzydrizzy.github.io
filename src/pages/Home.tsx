@@ -1,9 +1,31 @@
+{/* imports */}
 
-// import { Shader, FlowingGradient } from "shaders/react";
-
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import "../style.scss";
 
+{/* initialization */}
+
+
+
+{/* processing */}
+
+
+
+{/* display */}
+
 export function Home() {
+    const location = useLocation();
+
+    useEffect(() => {
+        if (location.state?.scrollTo) {
+            setTimeout(() => {
+                document.getElementById(location.state.scrollTo)
+                    ?.scrollIntoView({ behavior: "smooth" });
+            }, 0);
+        }
+    }, [location.state]);
+
     return (
         <div id="home">
             <section id="page_one" className="page"> {/* introduction page */}
@@ -16,7 +38,7 @@ export function Home() {
                 </div>
 
                 <div id="image_container">
-                    <img src="/images/apollo_eleven.webp" alt="Lunar Rover"/> <br></br>
+                    <img src="images/apollo_eleven.webp" alt="Lunar Rover"/> <br></br>
                     <p id="caption"><em>Astronaut Buzz Aldrin standing on the Moon, facing a U.S. flag during the Apollo 11 mission.</em></p>
                 </div>
             </section>
@@ -26,7 +48,7 @@ export function Home() {
 
                 <div id="cards_container">
                     <div className="card">
-                        <img src="/images/meet_the_members_placeholder.webp"/>
+                        <img src="images/meet_the_members_placeholder.webp"/>
 
                         <div id="description">
                             <h1>Lucas Patel</h1>
@@ -40,7 +62,7 @@ export function Home() {
                     </div>
 
                     <div className="card">
-                        <img src="/images/meet_the_members_placeholder.webp"/>
+                        <img src="images/meet_the_members_placeholder.webp"/>
 
                         <div id="description">
                             <h1>Alex Lopez</h1>
@@ -54,7 +76,7 @@ export function Home() {
                     </div>
 
                     <div className="card">
-                        <img src="/images/meet_the_members_placeholder.webp"/>
+                        <img src="images/meet_the_members_placeholder.webp"/>
 
                         <div id="description">
                             <h1>Levi Harter</h1>
@@ -69,7 +91,7 @@ export function Home() {
                     </div>
 
                     <div className="card">
-                        <img src="/images/meet_the_members_placeholder.webp"/>
+                        <img src="images/meet_the_members_placeholder.webp"/>
 
                         <div id="description">
                             <h1>Matthew Desrosiers</h1>
@@ -83,7 +105,7 @@ export function Home() {
                     </div>
 
                     <div className="card">
-                        <img src="/images/meet_the_members_placeholder.webp"/>
+                        <img src="images/meet_the_members_placeholder.webp"/>
 
                         <div id="description">
                             <h1>Jonathan Gagne</h1>
@@ -108,8 +130,8 @@ export function Home() {
                 
                     <hr></hr>
                 
-                    <div><img src="/images/rover_placeholder.webp"/></div>
-                    <div><img src="/images/lunar_rover.webp"/></div>
+                    <div><img src="images/rover_placeholder.webp"/></div>
+                    <div><img src="images/lunar_rover.webp"/></div>
                     <div><img src="images/moon.webp"/></div>
                 </div>
                 

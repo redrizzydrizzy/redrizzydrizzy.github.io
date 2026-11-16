@@ -6,3 +6,4 @@ export default defineConfig({
     base: '/redrizzydrizzy.github.io/',
     plugins: [react()],
 })
+ 
