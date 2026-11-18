@@ -15,6 +15,7 @@ import "../style.scss";
 {/* display */}
 
 export function Home() {
+    {/* link director */}
     const location = useLocation();
 
     useEffect(() => {
@@ -84,8 +85,7 @@ export function Home() {
 
                             <p>
                                 <span>Contributions:</span> <br></br>
-                                ✦ Introduced NASA HUNCH to the CIS shop. <br></br>
-                                ✦ Brought the team together.
+                                ✦ Introduced NASA HUNCH to the CIS shop.
                             </p>
                         </div>
                     </div>
@@ -99,7 +99,8 @@ export function Home() {
 
                             <p>
                                 <span>Contributions:</span> <br></br>
-                                ✦ Built, designed and developed the <em>beautiful</em> website you see now.
+                                ✦ Built, designed and developed the <em>beautiful</em> website you see now. <br></br>
+                                ✦ Designed and developed the <u><a href="https://docs.google.com/presentation/d/1ew5T_7DTvAYzuYumpaLyxsfc3b9sxgS8NYiVLGzLgUM/edit?usp=sharing" target="_blank">presentation</a></u> used for PDR.
                             </p>
                         </div>
                     </div>

@@ -15,6 +15,7 @@ import "../style.scss";
 {/* display */}
 
 export function Timeline() {
+    {/* link director */}
     const location = useLocation();
 
     useEffect(() => {

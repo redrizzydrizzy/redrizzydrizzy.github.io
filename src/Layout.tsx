@@ -1,5 +1,17 @@
+{/* imports */}
+
 import { Outlet, Link } from "react-router-dom"
 import { useState, useEffect } from "react";
+
+{/* initialization */}
+
+
+
+{/* processing */}
+
+
+
+{/* display */}
 
 export function Layout() {
     const [scrollProgress, setScrollProgress] = useState(0);
@@ -26,14 +38,12 @@ export function Layout() {
                     <h2><Link to="/" state={{ scrollTo: "page_one" }}>Introduction</Link></h2>
                     <h2><Link to="/timeline" state={{ scrollTo: "page_one" }}>Timeline</Link></h2>
                     {/* pages will be added / filled out as needed */}
-                    <h2>Page 3</h2>
-                    <h2>Page 4</h2>
+                    <h2>WIP 1</h2>
+                    <h2>WIP 2</h2>
                     <h2><a href="https://nasahunch.com/projects/sft-2026-27-llaso-project-4-ai-predictive-maintenance-for-lunar-robots-n77o9n3o27fhozkq28jootsy" target="_blank">NASA HUNCH</a></h2>
                 </nav>
 
-                <div id="scroll_bar">
-                    <div id="scroll_progress" style={{ width: `${scrollProgress}%` }}></div>
-                </div>
+                <div id="scroll_bar"><div id="scroll_progress" style={{ width: `${scrollProgress}%` }}></div></div>
             </header>
 
             <div id="container">
