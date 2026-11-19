@@ -1,0 +1,40 @@
+<svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="17" cy="16" r="15.5" stroke="white"/>
+<circle opacity="0.5" cx="17.0027" cy="15.5242" r="10.4545" stroke="white"/>
+<circle cx="9.61023" cy="22.9167" r="1.59091" fill="white" stroke="white"/>
+<circle cx="14.0457" cy="5.17475" r="1.59091" fill="white" stroke="white"/>
+<circle cx="27.3522" cy="18.4812" r="1.59091" fill="white" stroke="white"/>
+<circle cx="17" cy="16" r="3.5" fill="white" stroke="white"/>
+<mask id="stroke0_3_45" fill="white">
+<path d="M21.9497 20.9498L21.5835 18.134L19.134 20.5835L21.9497 20.9498Z"/>
+</mask>
+<path d="M21.9497 20.9498L21.5835 18.134L19.134 20.5835L21.9497 20.9498Z" stroke-width="2" stroke="white" mask="url(#stroke0_3_45)"/>
+<mask id="stroke1_3_45" fill="white">
+<path d="M12.0502 11.0502L14.866 11.4165L12.4165 13.866L12.0502 11.0502Z"/>
+</mask>
+<path d="M12.0502 11.0502L14.866 11.4165L12.4165 13.866L12.0502 11.0502Z" stroke-width="2" stroke="white" mask="url(#stroke1_3_45)"/>
+<mask id="stroke2_3_45" fill="white">
+<path d="M12.0502 20.9498L12.4165 18.134L14.866 20.5835L12.0502 20.9498Z"/>
+</mask>
+<path d="M12.0502 20.9498L12.4165 18.134L14.866 20.5835L12.0502 20.9498Z" stroke-width="2" stroke="white" mask="url(#stroke2_3_45)"/>
+<mask id="stroke3_3_45" fill="white">
+<path d="M21.9497 11.0502L21.5835 13.866L19.134 11.4165L21.9497 11.0502Z"/>
+</mask>
+<path d="M21.9497 11.0502L21.5835 13.866L19.134 11.4165L21.9497 11.0502Z" stroke-width="2" stroke="white" mask="url(#stroke3_3_45)"/>
+<mask id="stroke4_3_45" fill="white">
+<path d="M17 9L18.7321 11.25H15.2679L17 9Z"/>
+</mask>
+<path d="M17 9L18.7321 11.25H15.2679L17 9Z" stroke-width="2" stroke="white" mask="url(#stroke4_3_45)"/>
+<mask id="stroke5_3_45" fill="white">
+<path d="M17 23L18.7321 20.75H15.2679L17 23Z"/>
+</mask>
+<path d="M17 23L18.7321 20.75H15.2679L17 23Z" stroke-width="2" stroke="white" mask="url(#stroke5_3_45)"/>
+<mask id="stroke6_3_45" fill="white">
+<path d="M10 16L12.25 17.7321V14.2679L10 16Z"/>
+</mask>
+<path d="M10 16L12.25 17.7321V14.2679L10 16Z" stroke-width="2" stroke="white" mask="url(#stroke6_3_45)"/>
+<mask id="stroke7_3_45" fill="white">
+<path d="M24 16L21.75 17.7321V14.2679L24 16Z"/>
+</mask>
+<path d="M24 16L21.75 17.7321V14.2679L24 16Z" stroke-width="2" stroke="white" mask="url(#stroke7_3_45)"/>
+</svg>
