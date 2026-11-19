@@ -39,7 +39,7 @@ export function Home() {
                 </div>
 
                 <div id="image_container">
-                    <img src="images/apollo_eleven.webp" alt="Lunar Rover"/> <br></br>
+                    <img src="images/apollo_eleven.webp" alt="Astronaut Buzz Aldrin; Apollo 11 Mission"/> <br></br>
                     <p id="caption"><em>Astronaut Buzz Aldrin standing on the Moon, facing a U.S. flag during the Apollo 11 mission.</em></p>
                 </div>
             </section>
@@ -49,7 +49,7 @@ export function Home() {
 
                 <div id="cards_container">
                     <div className="card">
-                        <img src="images/meet_the_members_placeholder.webp"/>
+                        <img src="images/meet_the_members_placeholder.webp" alt="Placeholder"/>
 
                         <div id="description">
                             <h1>Lucas Patel</h1>
@@ -63,7 +63,7 @@ export function Home() {
                     </div>
 
                     <div className="card">
-                        <img src="images/meet_the_members_placeholder.webp"/>
+                        <img src="images/meet_the_members_placeholder.webp" alt="Placeholder"/>
 
                         <div id="description">
                             <h1>Alex Lopez</h1>
@@ -77,7 +77,7 @@ export function Home() {
                     </div>
 
                     <div className="card">
-                        <img src="images/meet_the_members_placeholder.webp"/>
+                        <img src="images/meet_the_members_placeholder.webp" alt="Placeholder"/>
 
                         <div id="description">
                             <h1>Levi Harter</h1>
@@ -91,7 +91,7 @@ export function Home() {
                     </div>
 
                     <div className="card">
-                        <img src="images/meet_the_members_placeholder.webp"/>
+                        <img src="images/meet_the_members_placeholder.webp" alt="Placeholder"/>
 
                         <div id="description">
                             <h1>Matthew Desrosiers</h1>
@@ -100,13 +100,13 @@ export function Home() {
                             <p>
                                 <span>Contributions:</span> <br></br>
                                 ✦ Built, designed and developed the <em>beautiful</em> website you see now. <br></br>
-                                ✦ Designed and developed the <u><a href="https://docs.google.com/presentation/d/1ew5T_7DTvAYzuYumpaLyxsfc3b9sxgS8NYiVLGzLgUM/edit?usp=sharing" target="_blank">presentation</a></u> used for PDR.
+                                ✦ Designed and developed the <u><a href="https://docs.google.com/presentation/d/1pnfbVHi6ZkDCxS-iODXh9h06zjQiBvIyFuFCcTZtT5o/edit?usp=sharing" target="_blank">presentation</a></u> used for PDR.
                             </p>
                         </div>
                     </div>
 
                     <div className="card">
-                        <img src="images/meet_the_members_placeholder.webp"/>
+                        <img src="images/meet_the_members_placeholder.webp" alt="Placeholder"/>
 
                         <div id="description">
                             <h1>Jonathan Gagne</h1>
